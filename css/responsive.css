@@ -1,0 +1,26 @@
+@media screen and (max-width: 700px){
+  h1{font-size: 90px;}
+
+  h2{font-size: 1.5rem;}
+
+  .brand-img{width:50%;}
+
+  .brand-img-aroha{width:50%;}
+
+  .text{font-size: 12px;}
+
+  .aboutme-img{width: 80%;
+    float:none;
+  text-align: center;
+ margin: 0 0 0 10px;
+padding: 0 0 30px 0;}
+
+  .gr_grid_book_container{
+    float:center;
+    margin: 0 0 0 10px;
+  }
+
+  .gr_grid_container{
+    padding: 0 0 20px 20px;
+  }
+}
