@@ -7,7 +7,8 @@
 
   .brand-img-aroha{width:50%;}
 
-  .text{font-size: 12px;}
+  .text{font-size: 12px;
+  text-align: left;}
 
   .aboutme-img{width: 80%;
     float:none;
