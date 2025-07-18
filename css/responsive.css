@@ -3,6 +3,7 @@
 
   .Intro-img{
     padding-left:0;
+    padding-top:20px;
   }
 
   .container{padding:10%;}
@@ -28,5 +29,35 @@ padding: 0 0 30px 0;}
 
   .gr_grid_container{
     padding: 0 0 20px 20px;
+  }
+}
+
+
+/* Mobile for work */
+@media (max-width: 768px) {
+  .work-date {
+    font-size: 0.9rem;
+  }
+  .work-company {
+    font-size: 1rem;
+  }
+  .work-title {
+    font-size: 0.95rem;
+  }
+  #workAccordion .btn-link {
+    padding: 1rem 1.2rem;
+  }
+  #workAccordion .card-body {
+    padding: 1rem 1.2rem;
+  }
+}
+
+
+/* Mobile tap-style interaction for education */
+/* Tap-style interaction for mobile */
+@media (hover: none) and (pointer: coarse) {
+  .edu-card:active .edu-logo {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(38, 78, 112, 0.3);
   }
 }

@@ -39,32 +39,36 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
+      
+      <!-- Scroll behavior -->
+      <style>
+      html {scroll-behavior: smooth;}
+      .navbar-nav .nav-link { margin-right: 20px; font-weight: 500;}
+      </style>
+
+
   </head>
   <body>
     <!-- top area start -->
       <section  id="title">
           <!-- Nav Bar -->
-          <nav class="navbar navbar-expand-lg navbar-dark">
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" href="aboutme.html">About Me </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#work">Work</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#brands">Brands</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contact-me">Contact Me</a>
-                  </li>
-                </ul>
-              </div>
-            </nav> <!-- navbar end -->
+      <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+          <div class="container">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="aboutme.html">About Me</a></li>
+            <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact-me">Contact Me</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
       </section>
 
@@ -75,29 +79,139 @@
       <!-- top-area End -->
 
       <!-- Shortintro -->
-      <section class="white" id="shortintro">
-        <div class="row">
+       <section class="white short-intro" id="shortintro">
+        <div class="row align-items-center">
           <div class="col-md-6">
-            <h3>A <strong>Brand Entrepreneur</strong> in the body of a <strong>Chartered Accountant</strong></h3>
-            <p>Hi, my name is Surbhi Toshniwal. Chartered Accountant by profession and currently working as a Senior Brand Manager
-              at Purplle.com. Prior to this, I worked as a Brand Entrepreneur at Future Group India. In simple words -</p>
-              <i class="fas fa-check-square"></i> I have a knack for numbers and; <br><br>
-              <i class="fas fa-check-square"></i> I love building and creating brands <br><br>
-
-            <a href="aboutme.html"> Click here to know more about me </a>
+            <h2 class="intro-heading">
+              My Journey
+            </h2>
+            <p class="intro-paragraph">
+              I’m a Chartered Accountant turned brand entrepreneur who built and scaled consumer brands to $10M+ with full ownership across product, GTM, and operations.<br><br>
+              I earned my MBA from Harvard Business School, where I leaned into my curiosity for tech — interning at a Series A computer vision startup in San Francisco, working across product and marketing.
+I’m now exploring the intersection of AI, business, and storytelling — solving zero-to-one problems with scrappy energy.
             </p>
-
+            <a href="aboutme.html" class="intro-button">
+              Click here to know more about me
+            </a>
           </div>
 
           <div class="col-md-6">
-            <img class="Intro-img" src="Images/Capture.PNG">
-
+            <img class="Intro-img" src="Images/Capture.PNG" alt="Surbhi Toshniwal">
           </div>
         </div>
       </section>
+ 
       <!-- Short intro end -->
+      
+      <!-- upgraded work experince -->
+        <section class="pink" id="work">
+          <h3 class="regular-heading">Work Experience</h3>
 
-      <!-- Work Experience -->
+          <div id="workAccordion">
+
+            <!-- Overview AI -->
+            <div class="card work-card">
+              <div class="card-header" id="headingOverview">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOverview" aria-expanded="false" aria-controls="collapseOverview">
+                    <span class="work-date">Summer 2025</span>
+                    <span class="work-role">
+                      <span class="work-company">Overview AI</span>
+                      <span class="work-title">Strategy & Marketing Intern</span>
+                    </span>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseOverview" class="collapse" aria-labelledby="headingOverview" data-parent="#workAccordion">
+                <div class="card-body">
+                  <ul>
+                    <li>Overview AI is a Series A startup using computer vision to automate manufacturing.</li>
+                    <li>Helped drive GTM and product — built internal tools, crafted sales assets, and led onsite demos to inform roadmap.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Purplle -->
+            <div class="card work-card">
+              <div class="card-header" id="headingPurplle">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsePurplle" aria-expanded="false" aria-controls="collapsePurplle">
+                    <span class="work-date">Feb 2021 – June 2023</span>
+                    <span class="work-role">
+                      <span class="work-company">Purplle.com</span>
+                      <span class="work-title">Senior Brand Manager</span>
+                    </span>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapsePurplle" class="collapse" aria-labelledby="headingPurplle" data-parent="#workAccordion">
+                <div class="card-body">
+                  <ul>
+                    <li>Purplle is India’s leading online beauty retailer valued at ~$1.1Bn.</li>
+                    <li>Led their private label, Alps Goodness. Tripled the revenue by 3x. </li>
+                    <li>Scaled a team of 7 and aligned cross-functional teams to accelerate brand growth.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Future Consumer -->
+            <div class="card work-card">
+              <div class="card-header" id="headingFutureConsumer">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFutureConsumer" aria-expanded="false" aria-controls="collapseFutureConsumer">
+                    <span class="work-date">May 2017 – Feb 2021</span>
+                    <span class="work-role">
+                      <span class="work-company">Future Consumer Ltd.</span>
+                      <span class="work-title">Brand Entrepreneur</span>
+                    </span>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseFutureConsumer" class="collapse" aria-labelledby="headingFutureConsumer" data-parent="#workAccordion">
+                <div class="card-body">
+                  <ul>
+                    <li>Future Group is India’s leading retail and fashion conglomerate, valued at ~$5B.</li>
+                    <li>Scaled TSBeauty into the group’s fastest-growing brand by leading its transformation into a beauty and cosmetics line.</li>
+                    <li>-	Worked with the founder, Mr. Kishore Biyani on special projects in his office.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- KPMG -->
+            <div class="card work-card">
+              <div class="card-header" id="headingKPMG">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseKPMG" aria-expanded="false" aria-controls="collapseKPMG">
+                    <span class="work-date">Sept 2013 – May 2017</span>
+                    <span class="work-role">
+                      <span class="work-company">KPMG</span>
+                      <span class="work-title">Senior Consultant, Tax & Advisory</span>
+                    </span>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseKPMG" class="collapse" aria-labelledby="headingKPMG" data-parent="#workAccordion">
+                <div class="card-body">
+                  <ul>
+                    <li>Advised 20+ domestic and international clients on tax strategy and compliance.</li>
+                    <li>Completed a 3-year full-time CA articleship at KPMG before rejoining as a Senior Executive.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <a href="mailto:surbhitoshniwal28@gmail.com?subject=Detailed%20CV%20needed-" class="btn btn-outline-light btn-lg mt-4">Get a detailed CV</a>
+        </section>
+
+
+
+
+      <!-- Work Experience 
       <section class="pink" id="work">
         <h3 class="regular-heading">Work Experience</h3>
         <div class="row">
@@ -144,9 +258,47 @@
 
 
       </section>
-      <!-- work experience end -->
+      work experience end -->
 
-      <!-- Brands -->
+      <!--Education section-->
+          <section id="education" class="white text-center">
+            <h3 class="regular-heading">Education</h3>
+            <div class="row justify-content-center">
+
+              <div class="col-md-4 col-sm-6 d-flex flex-column align-items-center edu-card">
+                <img src="Images/hbslogo.png" class="edu-logo" alt="Harvard Business School logo">
+                <div class="edu-text">
+                  <strong>Harvard Business School</strong><br>
+                  Master of Business Administration (MBA), 2025
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6 d-flex flex-column align-items-center edu-card">
+                <img src="Images/icailogo.png" class="edu-logo" alt="ICAI logo">
+                <div class="edu-text">
+                  <strong>Institue of Chartered Accountants of India</strong><br>
+                  Chartered Accountant (CA)
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6 d-flex flex-column align-items-center edu-card">
+                <img src="Images/hrlogo.png" class="edu-logo" alt="HR College logo">
+                <div class="edu-text">
+                  <strong>H.R. College of Commerce</strong><br>
+                  Bachelor of Commerce (BCOM)
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+
+
+
+
+
+
+      <!-- Brands 
       <section id="brands">
         <h3 class="regular-heading">Brands I have worked on</h3>
         <div class="row">
@@ -208,12 +360,12 @@
 
 
       </section>
-      <!-- Brands end -->
+       Brands end -->
 
       <section class="blue" id="contact-me">
         <h3 class="regular-heading-white">Contact Me</h3>
         <p class="p-white">
-        Have any questions for me? or just want to say Hi? Drop me a line. I am from the 'email-checking-newsletter-hoarding' breed of humans, so you can expect a quick reply!
+        Have any questions for me? or just want to say Hi? Drop me a line - I’m always down for a good conversation!
       </p><br />
 
         <div>
@@ -244,6 +396,10 @@
     <script>
     (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="24wQAo83fA8JQ2--Hqq1Y";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
     </script> 
+
+    
+
+
 
   </body>
 </html>

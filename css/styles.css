@@ -81,7 +81,7 @@ font-family: Montserrat;}
 
 #aboutme{
   text-align: center;
-  padding: 7% 12% 2%;
+  padding: 7% 10% 1%;
   line-height: 1;
 }
 
@@ -89,15 +89,14 @@ font-family: Montserrat;}
   padding:6% 15% 1%;
 }
 
-#books{
-  padding: 0% 12%;
-}
 
 
-/* Short Intro Section */
+
+
+/* Short Intro Section (Updated)*/
 .Intro-img{
   text-align:center;
-  padding-left:18%;
+  padding-left:15%;
   width:100%;
 
     }
@@ -106,9 +105,201 @@ font-family: Montserrat;}
   color: #264e70
 }
 
+.short-intro {
+  padding: 5% 5%;
+  text-align: left;
+}
+
+.intro-heading {
+  font-weight: 900;
+  font-family: 'Lato', sans-serif;
+  font-size: 2.5rem;
+  color: #264e70;
+  margin-bottom: 2rem;
+}
+
+.intro-paragraph {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.1rem;
+  line-height: 2rem;
+  color: #222;
+  margin-top: 1rem;
+  max-width: 700px;
+}
+
+.intro-button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.75rem 1.75rem;
+  background-color: #f76c6c; /* warm coral */
+  color: #fff;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.intro-button:hover {
+  background-color: #fff;
+  color: #f76c6c;
+  border: 2px solid #f76c6c;
+}
+
+/* Work */
+
+/* Accordion Work Section Styling */
+#workAccordion .work-card {
+  background-color: #fcd5ce; /* Coral background */
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(38, 78, 112, 0.15);
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+#workAccordion .work-card:hover {
+  transform: translateY(-3px);
+}
+
+#workAccordion .btn-link {
+  width: 100%;
+  text-align: left;
+  padding: 1.2rem 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none !important;
+  color: #264e70;
+  transition: background-color 0.3s ease;
+}
+
+#workAccordion .btn-link:hover {
+  background-color: #d6e7f5; /* bluish hover */
+  color: #264e70;
+  text-decoration: none;
+}
+
+.work-date {
+  font-weight: 700;
+  color: #4f5355;
+  font-size: 0.95rem;
+}
+
+.work-role {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4px;
+}
+
+.work-company {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #264e70;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.work-title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #3e3e3e;
+}
+
+#workAccordion .card-body {
+  background-color: #fff;
+  padding: 1.2rem 1.5rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  border-top: 1px solid #eee;
+}
+
+#workAccordion .card-body ul {
+  list-style-type: disc;
+  padding-left: 1.2rem;
+  color: #333;
+}
+
+
+
+
+
+/* Get detailed CV button */
+.btn-outline-light {
+  background-color: transparent;
+  color: #264e70;
+  border: 2.5px solid #264e70;
+  font-weight: 700;
+  border-radius: 28px;
+  padding: 14px 36px;
+  margin-top: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  box-shadow: 0 4px 8px rgba(38, 78, 112, 0.2);
+  user-select: none;
+  cursor: pointer;
+}
+.btn-outline-light:hover,
+.btn-outline-light:focus {
+  background-color: #264e70;
+  color: #fff;
+  box-shadow: 0 8px 18px rgba(38, 78, 112, 0.6);
+  outline: none;
+}
+  
+
+/*Education*/
+
+#education {
+    padding-top: 4%;
+  padding-bottom: 2%;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+#education .regular-heading {
+  padding-bottom: 1.5%; /* or 0 if you want almost no space */
+}
+
+.edu-card {
+  padding: 30px 20px;
+  margin-bottom: 40px;
+  min-height: 280px;
+}
+
+.edu-logo {
+  max-width: 250px; /* Increased logo size */
+  height: auto;
+  margin-bottom: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform;
+}
+
+/* Text styles */
+.edu-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: #264e70;
+  max-width: 220px;
+}
+
+/* Hover effect for logo */
+.edu-card:hover .edu-logo {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(38, 78, 112, 0.3);
+}
+
+
+
 /* brands */
 #brands{
-  padding: 7% 15%;
+  padding: 6.5% 15%;
 }
 .brand-img{width:60%;}
 .brand-img-aroha{padding-top:20%;
@@ -195,6 +386,7 @@ width:60%;}
   text-align: justify;
   line-height: 2rem;
 }
+
 
 
 /* Books i am reading */
